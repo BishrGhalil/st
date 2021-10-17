@@ -1,10 +1,21 @@
+/*  ____ _____  */
+/* |  _ \_   _|  Derek Taylor (DistroTube) */
+/* | | | || |  	 http://www.youtube.com/c/DistroTube */
+/* | |_| || |  	 http://www.gitlab.com/dwt1/ */
+/* |____/ |_|  	 */ 
+
 /* See LICENSE file for copyright and license details. */
 /* appearance */
-static char *font = "SourceCodePro:pixelsize=15:antialias=true:autohint=true";
+
+/* Your default font will be Hack which is found in the standard
+ * Arch repos and is listed as a dependency for this build. JoyPixels is also
+ * a hard dependency and makes colored fonts and emojis possible.
+ */
+static char *font = "SourceCodePro:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { 
-    "JoyPixels:pixelsize=15:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=14:antialias=true:autohint=true",
 };
-static int borderpx = 20;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -13,7 +24,8 @@ static int borderpx = 20;
  * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
- */ static char *shell = "/bin/sh";
+ */
+static char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -91,36 +103,36 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1.00;
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 /* Colorscheme based on the 'Doom One' theme from Doom Emacs */
 static const char *colorname[] = {
 	/* 8 normal colors */
-      "#555",
-      "#f7768e",
-      "#9ece6a",
-      "#e0af68",
-      "#7aa2f7",
-      "#ad8ee6",
-      "#449dab",
-      "#ffffff",
+	"#3b4252",
+	"#bf616a",
+	"#a3be8c",
+	"#ebcb8b",
+	"#81a1c1",
+	"#b48ead",
+	"#88c0d0",
+	"#e5e9f0",
 
 	/* 8 bright colors */
-      "#555",
-      "#f7768e",
-      "#9ece6a",
-      "#e0af68",
-      "#7aa2f7",
-      "#ad8ee6",
-      "#449dab",
-      "#ffffff",
+	"#4c566a",
+	"#bf616a",
+	"#a3be8c",
+	"#ebcb8b",
+	"#81a1c1",
+	"#b48ead",
+	"#8fbcbb",
+	"#eceff4",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#282a36",
-	"#d7d7d7",
+	"#2e3440",
+	"#d8dee9",
 	"#d7d7d7",
 };
 
