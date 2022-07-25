@@ -14,7 +14,8 @@ This is my personal build of st that is very heavily patched to add more functio
 * st-scrollback-mouse -- adds the ability to scroll with SHIFT+MouseWheel
 * st-scrollback-mouse-altscreen -- now you can scroll with just the MouseWhell (no SHIFT required)
 * st-vertcenter -- better vertical alignment of lineszz
-  st-workingdir -- adds option to open st at specific directory (ex: st -d /usr/bin)
+* st-workingdir -- adds option to open st at specific directory (ex: st -d /usr/bin)
+* st-w3m -- support for w3m
 # Install
 ```
 git clone https://github.com/BishrGhalil/st.git
